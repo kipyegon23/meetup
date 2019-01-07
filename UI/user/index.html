@@ -13,23 +13,25 @@
     <header class="header">
         <!-- header logo -->
         <div class="header__logo">
-            <img src="../img/meetup.png" alt="meetup" class="logo">
+            <svg class="logo">
+                <use xlink:href="../img/sprite.svg#icon-bullhorn">
+            </svg>
         </div>
         <!-- logo end -->
         <!-- navigation start -->
         <div class="header__navigation">
             <ul class="header__navigation--nav">
                 <li class="header__navigation--nav-item">
-                    <a href="" class="header__navigation--nav-link">home</a>
+                    <a href="index.html" class="header__navigation--nav-link">home</a>
                 </li>
                 <li class="header__navigation--nav-item">
-                    <a href="" class="header__navigation--nav-link">Questions</a>
+                    <a href="question.html" class="header__navigation--nav-link">Questions</a>
                 </li>
                 <li class="header__navigation--nav-item">
-                    <a href="" class="header__navigation--nav-link">log in</a>
+                    <a href="login.html" class="header__navigation--nav-link">log in</a>
                 </li>
                 <li class="header__navigation--nav-item">
-                    <a href="" class="header__navigation--nav-link">log out</a>
+                    <a href="regisiter.html" class="header__navigation--nav-link">log out</a>
                 </li>
             </ul>
         </div>
@@ -52,21 +54,28 @@
     <section class="about">
         <div class="about__content">
            <div class="about__info">
-                <img src="../img/icons/mail2.png" alt="message" class="about__icon">
+                <svg class="about__icon">
+                    <use xlink:href="../img/sprite.svg#icon-checkmark">
+                </svg>
                 <p class="text">We talk our opinions. And Express our needs for better solutions</p>
            </div>
 
            <div class="about__info">
-                <img src="../img/icons/circle-down.png" alt="message" class="about__icon">
+                <svg class="about__icon">
+                    <use xlink:href="../img/sprite.svg#icon-location">
+                </svg>
                 <p class="text">We Discuss each and every point of one's opinion. Here today and not tomorrow</p>
            </div>
 
            <div class="about__info">
-                <img src="../img/icons/angry.png" alt="message" class="about__icon">
+                <svg class="about__icon">
+                    <use xlink:href="../img/sprite.svg#icon-send">
+                </svg>
                 <p class="text">We value, depend, and uplift you above all. We take you serious.</p>
            </div>
         </div>
 
+        <button class="btn about__readmore">read more</button>
 
     </section>
 

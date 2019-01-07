@@ -47,6 +47,7 @@ body{
 }
 
 .logo{
+    fill:#552743fa;
     height: 4.5rem;
     width: 4.5rem;
 }
@@ -128,6 +129,7 @@ color-primary: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .about__content{
@@ -145,7 +147,16 @@ color-primary: #fff;
     margin-right: 3rem;
 }
 .about__icon{
+    fill:#581b41fa;
+    width: 4.5rem; 
+    height: 4.5rem;    
     margin-bottom: 2.3rem;
+}
+.about__readmore{
+    margin-top: 6rem;
+
+    background-color:#552743fa;
+    color: white;
 }
 
 .text{
@@ -202,4 +213,66 @@ color-primary: #fff;
 }
 .form-group .btn{
     text-align: center;
+}
+
+.question{
+    height: 100vh;
+    margin: 3rem auto;
+}
+
+.question__area{
+    margin: 5rem 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.question__text{
+    font-size: 1.5rem;
+    font-family: Tahoma;
+    line-height: 1.4;
+    flex: 0 1 60%;
+    margin-right: 2rem;
+}
+.question__votes{
+    background-color: #581b41fa;
+    padding: 1.4rem;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 2.5rem;
+}
+.vote__icon{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.upvote .vote__icon{
+    fill: green;
+}
+.downvote .vote__icon{
+    fill: orangered;
+}
+.comment .vote__icon{
+    fill: rgb(55, 43, 226);
+}
+.upvote{
+    margin-right: 1rem;
+}
+.downvote{   
+    margin-right: 1.5rem;
+}
+.comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+.comment__msg{
+    height: 30vh;
+    width: 40vw;
+}
+.btn-comment{
+    background-color: #552743fa;
+    color: #fff;
+    align-self: center;
 }
