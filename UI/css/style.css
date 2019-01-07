@@ -1,0 +1,167 @@
+/* BASIC PAGE RESET */
+
+*,
+*:link,
+*:visited{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit
+}
+
+/* CUSTOM VARIABLES */
+html{
+    /* set the overall font-size */
+    font-size: 62.5%; /*1rem = 10px*/  
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem; /* rem em px*/
+    background-color: #f8f5f5; 
+    line-height: 1.2;
+}
+
+.container{
+    margin: 3rem 6rem;
+}
+
+/* HOME PAGE DESIGN */
+
+/* Header  */
+
+/*  Display with flex box --item */
+/* 1rem = 10px */
+.header{
+    height:5rem;
+    background-color:#eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.header__logo{
+    margin-left: .3rem;
+}
+
+.logo{
+    height: 4.5rem;
+    width: 4.5rem;
+}
+.header__navigation{
+    margin-right: 2rem;
+}
+.header__navigation--nav{
+    display: flex; 
+    justify-content: space-around;
+    list-style-type: none;
+}
+.header__navigation--nav-item{
+    padding-right: 1rem;
+
+}
+.header__navigation--nav-link{
+    text-decoration: none;
+    color: #552743fa;
+    text-transform: uppercase;
+}
+
+/* 
+
+color-primary: #fff;
+*/
+.home{
+    height: 50vh;
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-size: cover;
+    color:#552743fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__center{
+    text-align: center;
+}
+.home__text{
+    text-transform: uppercase;
+}
+.home__text-main{
+    display: block;
+    letter-spacing: 2rem;
+}
+.home__text-sub{
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: .4rem;
+}
+
+/* BUTTONS */
+
+.btn{
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+
+}
+.btn:hover{
+    background-color: #fff;
+    color: #552743fa;
+}
+
+.home--btn{
+    margin-top: 2rem;
+}
+
+
+.about{
+    height: 30vw;
+    background-color: #eee;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__content{
+    display: flex; /*flex box -technique*/
+    justify-content: center;
+    align-content: center;
+ }
+
+.about__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__info:not(:last-child){
+    margin-right: 3rem;
+}
+.about__icon{
+    margin-bottom: 2.3rem;
+}
+
+.text{
+    text-align: center;    
+}
+
+/* FOOTER */
+.footer{
+    height: 10vh;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.author{
+    color: #552743fa;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
